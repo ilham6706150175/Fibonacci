@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class Jurnal8 {
     
     public static void main(String[] args) {
+        long hasil = 0;
         Scanner show = new Scanner(System.in);
         System.out.print("Masukkan Jumlah Deret Fibonacci : ");
         int n = show.nextInt();
@@ -18,8 +19,8 @@ public class Jurnal8 {
         }
         
         for(int i=0; i<n; i++){
-            System.out.print(fib[i] + " ");
+            hasil = fib[i] + hasil;
         }
+        System.out.println(hasil);
     }
-    
 }
